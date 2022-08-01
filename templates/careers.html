@@ -1,0 +1,245 @@
+{% extends 'main.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'styles/index.css' %}" />
+<html lang="en">
+<head>
+    <style>
+      table, td, th {  
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+      
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      th, td {
+        padding: 9px;
+        text-align: center;
+      }
+      .btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    width: max-content;
+}
+      
+
+label {
+  display: inline-block;
+  width: 130px;
+  text-align: left;
+  color: #000;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.red{
+  color:red;
+}
+      </style>
+  </head>
+
+    <div class="container-fluid p-0 mb-5">
+      <img src="{% static 'images/cerr.jpg' %}" alt="" class="img-fluid" />
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div style="overflow-x: auto;">
+            <table  >
+              <tr>
+                <th>Job Title</th>
+                
+                <th>Experience</th>
+                <th>Required Skills</th>
+
+              </tr>
+              
+              <tr>
+                <td>Big Data Engineer</td>
+                
+                <td>3 to 8 years</td>
+                <td>Python,SQL,Handoop Ecosystem,Hive,Kubernetes</td>
+                <td>
+                  <a  class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Apply Now
+                </a></td>
+              </tr>
+
+              <tr>
+                <td>SQL Server Support</td>
+                
+                <td>3 to 4 years</td>
+                <td>L1,L2,SSIS,ETL Tools,Sql,DOS,UNIX</td>
+                <td>
+                  <a  class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Apply Now
+                </a></td>
+              </tr>
+              <tr>
+                <td>Senior DotNet Developer</td>
+                
+                <td>5+ years</td>
+                <td>.Net Core,Visual Studio 2019,SQL Server 2019,SQL,SAAS,Kestrel Server</td>
+                <td>
+                  <a  class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Apply Now
+                  </a>
+              </td>
+              </tr>
+
+
+              <tr>
+                <td>Sales & Service Cloud Developer</td>
+                
+                <td>5+ years</td>
+                <td>Node Js,Angular Js, React,HTML,CSS,Java Script,APEX,Web Services,REST and SOAP APIs</td>
+                <td>
+                  <a  class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Apply Now
+                  </a>
+              </td>
+              </tr>
+
+              <tr>
+                <td>Senior React Native Developer</td>
+                
+                <td>5+ years</td>
+                <td>Karma,Jest,Appium,Cypress,Scrum,Kanban</td>
+                <td>
+                  <a  class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Apply Now
+                  </a>
+              </td>
+              </tr>
+              <tr>
+                <td>Senior Angular</td>
+                
+                <td>7+ years</td>
+                <td>Http calls,Http interceptors,HTML,CSS,Javascript,React Native,Bootstrap,Agile(Scrum),REST APIs </td>
+                <td>
+                  <a  class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Apply Now
+                  </a>
+              </td>
+              </tr>
+              <tr>
+                <td>Senior Php Developer</td>
+                
+                <td>5+ years</td>
+                <td>Laravel and Php frameworks,Javascript,MySQL,JSON,XML,LAMP/WAMP environment,Angular,React</td>
+                <td>
+                  <a  class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Apply Now
+                  </a>
+              </td>
+              </tr>
+
+              <tr>
+                <td>Performance Tester</td>
+                
+                <td>3 to 5 years</td>
+                <td>Testcafe,Selenium,Web Driver,TestNG/Junit,SoapUI,Postman,JMeter,Javascript,Node Js</td>
+                <td>
+                  <a  class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Apply Now
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Java Developer</td>
+                
+                <td>3+ years</td>
+                <td>Java,Spring and Spring Boot,J2EE,JSP,Web Services,DB2,SQL</td>
+                <td>
+                  <a  class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Apply Now
+                  </a>
+              </td>
+              </tr>
+              
+              
+            </table>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+      <!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">To apply fill the application form</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        
+        <label>First Name<sup class="red">*</sup></label>
+        <input type="text" /><br /><br />
+
+        <label>Last Name<sup class="red">*</sup> </label>
+        <input type="text" /><br /><br />
+
+        <label>Email<sup class="red">*</sup> </label>
+        <input type="email" /><br /><br />
+
+          <label>Phone Number<sup class="red">*</sup></label>
+          <input type="number" /><br /><br />
+
+          <label>Date of Birth<sup class="red">*</sup></label>
+          <input type="number" /><br /><br />
+
+
+          <label>Address<sup class="red">*</sup></label>
+          <textarea rows="2" cols="23"></textarea><br /><br />
+
+
+
+          <label>Resume<sup class="red">*</sup></label>
+          <input type="file" id="myFile" name="filename"><br /><br />
+
+          <label>Message Us<sup class="red">*</sup></label>
+          <textarea rows="4" cols="23"></textarea><br /><br />
+
+
+          <div class="text-center">
+            <button class="btn  btn-primary ">
+              Submit
+            </button>
+          </div>
+          
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </body>
+  
+  </html>
+  {% endblock content %}
+  

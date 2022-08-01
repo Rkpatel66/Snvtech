@@ -1,0 +1,52 @@
+.slick-slide {
+  margin: 0 20px;
+}
+.slick-slide img {
+  width: 100%;
+}
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+@media (max-width: 800px) {
+  .client-area {
+    padding: 0;
+  }
+}
+.accordion-button:not(.collapsed) {
+  color: rgba(13, 14, 13, 0.74);
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: #f3c9f8b9;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+.accordion-button{
+text-transform: uppercase;
+font-size: 13px;
+font-weight: bold;
+}
+.img-icon{
+  width: 70px;
+  height: 70px;
+}

@@ -1,0 +1,167 @@
+{% extends 'main.html'%} {% load static %} {% block content %}
+<html>
+<head>
+ 
+  <link rel="stylesheet"  href="{% static 'styles/index.css' %}" />
+  <link rel="stylesheet"  href="{% static 'styles/shared.css' %}" />
+  <link rel="stylesheet" href="{%  static 'styles/about.css' %}" />
+
+  <link rel="stylesheet" href="{% static 'styles/slider.css' %}" />
+  <link rel="stylesheet" href="{% static 'slick/slick.css' %}" />
+  <link rel="stylesheet" href="{% static 'slick/slick-theme.css' %}" />
+</head>
+
+<body>
+
+
+  <!-- Carousel -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <!-- <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    </div> -->
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/staff.jpg'%}" alt="digital marketing" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/DIGITAL.jpg' %}" alt="digital marketing" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/web.jpg' %}" alt="digital marketing" class="d-block" style="width:100%">
+      </div>
+
+      <!-- <div class="carousel-item">
+        <img src="images/mobile-applications.jpg" alt="digital marketing" class="d-block" style="width:100%">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/Architecture-banner.jpg" alt="digital marketing" class="d-block" style="width:100%">
+      </div> -->
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <div class="container mt-5 mb-4">
+    <div class="row">
+
+      <div class="col-md-12">
+        <h1 class="h1size">
+          Welcome
+        </h1>
+        <p class="desc">
+          SNVETECH Established in 2022, SNVETECH has evolved into a trusted
+            enterprise solution provider for many customers from various
+            industries across the globe. Our talent pool consists of a highly
+            skilled and experienced workforce delivering consistent service
+            excellence to customers across industries globally. We Headquartered in
+            Texas (USA), SNVETECH has Delivery COE in India and offices
+            in 2 different locations in USA and Canada. We are offering a wide range of IT
+            services that cater to the digital needs of businesses of today and
+            tomorrow.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  
+
+ 
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="features">
+          <img
+            src="{% static 'images/vision.png' %}"
+            alt="premium"
+            width="78px"
+            height="78px"
+          />
+          <h4 class="mt-4">VISION</h4>
+
+          <p class="pt-3">
+            To be a trusted and sought-after partner to our Customers helping
+            in their Success.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="features pt-4">
+          <img
+            src="{% static 'images/persona.png' %}"
+            alt="premium"
+            width="78px"
+            height="78px"
+          />
+          <h4 class="mt-4">PERSONA</h4>
+
+          <p class="pt-3">
+            Agile, Collaborative, Compassionate, Flexible, Result-Oriented.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="features pt-4">
+          <img
+            src="{% static 'images/mission.png' %}"
+            alt="premium"
+            width="78px"
+            height="78px"
+          />
+          <h4 class="mt-4">MISSION</h4>
+
+          <p class="pt-3">
+            To provide outstanding Customer Experience through our Associates
+            by embedding Quality in everything we do.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="client-area">
+        <div class="container">
+          <h3 class="heading ">
+            Our
+            Clients
+          </h3>
+          <div class="logo-area slider mt-4">
+            <div class="slide"><img src="{% static 'images/1.png'%}" alt="" /></div>
+            <div class="slide"><img src="{% static 'images/2.jpg'%}" alt="" /></div>
+            <div class="slide"><img src="{% static 'images/3.png'%}" alt="" /></div>
+            <div class="slide"><img src="{% static 'images/5.png'%}" alt="" /></div>
+            <div class="slide"><img src="{% static 'images/6.png'%}" alt="" /></div>
+            <div class="slide"><img src="{% static 'images/7.png'%}" alt="" /></div>
+            <div class="slide"><img src="{% static 'images/8.jpeg'%}" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{% static 'scripts/jqurey.js' %}"></script>
+  <script src="{% static 'scripts/script.js' %}"></script>
+
+  <script src="{% static 'scripts/slick/slick.min.js' %}"></script>
+</body>
+</html>
+{% endblock content %}

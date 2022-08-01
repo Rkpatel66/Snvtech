@@ -1,0 +1,71 @@
+.footer {
+  color: #fff;
+  background: #2d2d2e;
+  padding: 50px 0px;
+  margin-top: 40px;
+}
+/* .ft_logo{
+        margin-left: 25px;
+        } */
+.quick_links ul li,
+.services ul li {
+  font-size: 0.85em;
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+.quick_links ul li a,
+.services ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+h5 {
+  color: #fff;
+}
+.follow {
+  text-align: center;
+}
+.bg_remove {
+  background: none;
+}
+.ft_socailmedia_icons {
+  text-align: center;
+}
+.ft_socailmedia_icons ul li {
+  display: inline;
+}
+
+.ft_socailmedia_icons ul li .fab {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.ft_socailmedia_icons ul li .fab:hover {
+  color: #fff;
+}
+
+.copy-right p {
+  text-align: center;
+  color: #000;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.quick_links li i,
+.services li i,
+.contactus li i {
+  margin: 0 10px 0 0;
+}
+.quick_links li a:hover,
+.services li a:hover {
+  margin-left: 10px;
+}
+
+.contactus ul li {
+  font-size: 0.85em;
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+.ml {
+  margin-left: 25px;
+}
